@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    image: download_videos_python
+    build: .
+    container_name: download_videos_python
+    ports:
+      - "${PORT}:${PORT}"  # Usa a porta definida no .env
+    volumes:
+      - ./downloads:${DOWNLOAD_PATH}  # Usa o caminho do .env
+    env_file:
+      - .env  # Carrega as variáveis do .env
+    restart: unless-stopped
