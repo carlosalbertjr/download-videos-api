@@ -9,7 +9,7 @@ Este projeto é uma API para baixar vídeos do YouTube e Dailymotion usando `yt-
 ### 1️⃣ **Clone o Repositório**
 
 ```sh
-git clone https://github.com/seu-usuario/download-videos.git
+git clone https://github.com/seu-usuario/download-videos-api.git
 cd download-videos
 ```
 
@@ -23,14 +23,6 @@ DOWNLOAD_PATH=/app/downloads
 ```
 
 ### 3️⃣ **Rodando com Docker**
-
-#### 📌 **Build e Execução**
-
-```sh
-docker-compose up --build
-```
-
-Isso irá construir a imagem e iniciar o container.
 
 #### 📌 **Rodar em Background (Modo Detach)**
 
