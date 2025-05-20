@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   app:
-    image: download_videos_python
+    image: python-3.11
     build: .
     container_name: download_videos_python
     ports:
